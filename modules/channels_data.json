@@ -1,0 +1,11 @@
+import json
+
+# Create channels_data.json
+channels_data = [
+    "-1001234567890",
+    "-1009876543210",
+    "-1005555555555"
+]
+
+with open("channels_data.json", "w") as f:
+    json.dump(channels_data, f, indent=4)
