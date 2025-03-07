@@ -42,9 +42,9 @@ bot = Client(
     bot_token=BOT_TOKEN
 )
 
-API_ID    = os.environ.get("API_ID", "12380656")
-API_HASH  = os.environ.get("API_HASH", "d927c13beaaf5110f25c505b7c071273")
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "6771720622:AAHu6VmTJKM0NEfsfK_tFcN5GnfJsSINTUo") 
+API_ID    = os.environ.get("API_ID", "21705536")
+API_HASH  = os.environ.get("API_HASH", "c5bb241f6e3ecf33fe68a444e288de2d")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "8020618163:AAEQTBjtfNsB7cMtx053fYFwJwIVfSjNVRk") 
 
 # Define aiohttp routes
 routes = web.RouteTableDef()
@@ -451,7 +451,7 @@ async def stop_handler(client, message: Message):
     
 cookies_file_path = os.getenv("COOKIES_FILE_PATH", "youtube_cookies.txt")
 
-@bot.on_message(filters.command("rowdy"))
+@bot.on_message(filters.command("engineer"))
 async def moni_handler(client: Client, m: Message):
     if m.chat.type == "private":
         user_id = str(m.from_user.id)
@@ -470,7 +470,7 @@ async def moni_handler(client: Client, m: Message):
     x = await input.download()
     await input.delete(True)
     file_name, ext = os.path.splitext(os.path.basename(x))
-    credit = f"rowdy"
+    credit = f"𝕰𝖓𝖌𝖎𝖓𝖊𝖊𝖗𝖘 𝕭𝖆𝖇𝖚™"
     token = f"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MzYxNTE3MzAuMTI2LCJkYXRhIjp7Il9pZCI6IjYzMDRjMmY3Yzc5NjBlMDAxODAwNDQ4NyIsInVzZXJuYW1lIjoiNzc2MTAxNzc3MCIsImZpcnN0TmFtZSI6IkplZXYgbmFyYXlhbiIsImxhc3ROYW1lIjoic2FoIiwib3JnYW5pemF0aW9uIjp7Il9pZCI6IjVlYjM5M2VlOTVmYWI3NDY4YTc5ZDE4OSIsIndlYnNpdGUiOiJwaHlzaWNzd2FsbGFoLmNvbSIsIm5hbWUiOiJQaHlzaWNzd2FsbGFoIn0sImVtYWlsIjoiV1dXLkpFRVZOQVJBWUFOU0FIQEdNQUlMLkNPTSIsInJvbGVzIjpbIjViMjdiZDk2NTg0MmY5NTBhNzc4YzZlZiJdLCJjb3VudHJ5R3JvdXAiOiJJTiIsInR5cGUiOiJVU0VSIn0sImlhdCI6MTczNTU0NjkzMH0.iImf90mFu_cI-xINBv4t0jVz-rWK1zeXOIwIFvkrS0M"
     try:    
         with open(x, "r") as f:
