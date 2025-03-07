@@ -1,0 +1,49 @@
+{
+    "name": "Rowdy",
+    "description": "Bot For Telegram",
+    "logo": "https://files.catbox.moe/hyn894.jpg",
+    "keywords": [
+        "text-video",
+        "video-extract",
+        "pyrogram"
+    ],
+    "repository": "https://github.com/HARRY0133/rowdylumi",
+    "success_url": "https://t.me/LuminantBots",
+    "stack": "container",
+    "env": {
+        "API_ID": {
+            "description": "Enter Your Api Id",
+            "value": "12380656",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "Enter Your Api Hash",
+            "value": "d927c13beaaf5110f25c505b7c071273",
+            "required": true
+        },
+        "BOT_TOKEN": {
+            "description": "Enter Your Telegram Bot Token",
+            "value": "6771720622:AAHu6VmTJKM0NEfsfK_tFcN5GnfJsSINTUo",
+            "required": true
+        },
+        "OWNER_ID": {
+            "description": "User id of bot owner ",
+            "value": "7696342661",
+            "required": true
+        },
+        "SUDO_USERS": {
+            "description": "𝑺𝒖𝒅𝒐 𝑰𝑫'𝒔 (𝒀𝒐𝒖 𝑪𝒂𝒏 𝑨𝒅𝒅 𝑴𝒖𝒍𝒕𝒊𝒑𝒍𝒆 𝑩𝒚 𝑮𝒊𝒗𝒊𝒏𝒈 𝑺𝒑𝒂𝒄𝒆)",
+            "value": "7696342661",
+            "required": true
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        },
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+        }
+    ]
+}
