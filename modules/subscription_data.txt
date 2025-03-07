@@ -1,0 +1,10 @@
+# Create subscription_data.txt
+subscription_data = [
+    "1147534909,2023-12-31",
+    "123456789,2024-01-15",
+    "987654321,2024-02-28"
+]
+
+with open("subscription_data.txt", "w") as f:
+    for entry in subscription_data:
+        f.write(entry + "\n")
