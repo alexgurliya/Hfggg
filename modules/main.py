@@ -160,7 +160,7 @@ async def start_command(bot: Client, message: Message):
 
 
 COOKIES_FILE_PATH = os.getenv("COOKIES_FILE_PATH", "youtube_cookies.txt")
-ADMIN_ID = 7696342661 # Admin ID
+ADMIN_ID = 1147534909 # Admin ID
 
 @bot.on_message(filters.command("cookies") & filters.private)
 async def cookies_handler(client: Client, m: Message):
