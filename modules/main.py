@@ -42,9 +42,9 @@ bot = Client(
     bot_token=BOT_TOKEN
 )
 
-API_ID    = os.environ.get("API_ID", "21705536")
-API_HASH  = os.environ.get("API_HASH", "c5bb241f6e3ecf33fe68a444e288de2d")
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "8020618163:AAEQTBjtfNsB7cMtx053fYFwJwIVfSjNVRk") 
+API_ID    = os.environ.get("API_ID", " ")
+API_HASH  = os.environ.get("API_HASH", " ")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", " ") 
 
 # Define aiohttp routes
 routes = web.RouteTableDef()
@@ -90,11 +90,11 @@ import random
 keyboard = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton(text="📞 Contact", url="https://t.me/@ROWDXYBOT"),
-            InlineKeyboardButton(text="🛠️ Help", url="https://t.me/@ROWDXYBOT"),
+            InlineKeyboardButton(text="📞 Contact", url="https://t.me/"),
+            InlineKeyboardButton(text="🛠️ Help", url="https://t.me/"),
         ],
         [
-            InlineKeyboardButton(text="📫 Updates Channel", url="https://t.me/+6rUIkO4lpZNlOTE1"),
+            InlineKeyboardButton(text="📫 Updates Channel", url="https://t.me/"),
         ],
     ]
 )
@@ -103,11 +103,11 @@ keyboard = InlineKeyboardMarkup(
 Busy = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton(text="📞 Contact", url="https://t.me/@ROWDXYBOT"),
-            InlineKeyboardButton(text="🛠️ Help", url="https://t.me/@ROWDXYBOT"),
+            InlineKeyboardButton(text="📞 Contact", url="https://t.me/"),
+            InlineKeyboardButton(text="🛠️ Help", url="https://t.me/"),
         ],
         [
-            InlineKeyboardButton(text="🪄 Updates Channel", url="https://t.me/+6rUIkO4lpZNlOTE1"),
+            InlineKeyboardButton(text="🪄 Updates Channel", url="https://t.me/"),
         ],
     ]
 )
@@ -143,7 +143,7 @@ async def start_command(bot: Client, message: Message):
         "➽ **I Can Extract Videos & Pdf From Your Text File and Upload to Telegram**\n\n"
         "➽ **For Help Use Command /Guide ⚔️**\n\n"
         "➽ **For Stop ⛔ working process ⇶ /stop Command**\n\n"
-        "➽ **𝐔𝐬𝐞 /Rowdy Command To Download  Data From TXT File 🗃️ \n\n"
+        "➽ **𝐔𝐬𝐞 /txt Command To Download  Data From TXT File 🗃️ \n\n"
         "➽ **𝐌𝐚𝐝𝐞 𝐁𝐲: ᏒᎾᏯᎠᎽ 🦁 **"
     )
 
